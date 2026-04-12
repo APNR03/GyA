@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picarones G&A</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: radial-gradient(circle at 20% 20%, rgba(255,193,108,0.25), transparent 40%),
+                  radial-gradient(circle at 80% 0%, rgba(255,255,255,0.15), transparent 40%),
+                  linear-gradient(135deg, #0f0f0f, #1a1a1a 40%, #0d0d0d);
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2.8em, 7vw, 4em);
+      color: #ffd27f;
+      text-shadow: 0 6px 25px rgba(255,210,127,0.9), 0 0 40px rgba(255,210,127,0.6);
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #1c1c1c;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd27f;
+      text-shadow: 0 0 10px rgba(255,210,127,0.8);
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #ffd27f;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      color: #ffd27f;
+      font-size: 1.8em;
+      text-shadow: 0 4px 15px rgba(255,210,127,0.7);
+      border-left: 4px solid #ffd27f;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* AUTO SCROLL CAROUSEL */
+    .carousel {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      animation: scroll 20s linear infinite;
+    }
+
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .carousel-wrapper {
+      overflow: hidden;
+    }
+
+    .card {
+      min-width: 250px;
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 10px;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .phone {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+<header>Picarones G&A</header>
+
+<nav>
+  <a href="#postres">Postres</a>
+  <a href="#ubicacion">Ubicación</a>
+  <a href="#delivery">Delivery</a>
+</nav>
+
+<section id="postres">
+  <h2>Postres</h2>
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <div class="card">
+        <img src="https://www.peru.travel/Contenido/General/Imagen/es/301/1.1/picarones.jpg">
+        <p>Picarones</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn0.recetasgratis.net/es/posts/1/9/6/mazamorra_morada_facil_16691_orig.jpg">
+        <p>Mazamorra Morada</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bekiacocina.com/images/cocina/0000/96-h.jpg">
+        <p>Arroz con leche</p>
+      </div>
+      <div class="card">
+        <img src="https://buenazo.cronosmedia.glr.pe/original/2023/03/01/63ffd9dbdbd65011a7281b73.jpg">
+        <p>Leche Asada</p>
+      </div>
+      <div class="card">
+        <img src="https://peru.info/archivos/publicacion/145-imagen-1951391982020.jpg">
+        <p>Papa Rellena</p>
+      </div>
+
+      <!-- DUPLICATE FOR LOOP EFFECT -->
+      <div class="card">
+        <img src="https://www.peru.travel/Contenido/General/Imagen/es/301/1.1/picarones.jpg">
+        <p>Picarones</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn0.recetasgratis.net/es/posts/1/9/6/mazamorra_morada_facil_16691_orig.jpg">
+        <p>Mazamorra Morada</p>
+      </div>
+      <div class="card">
+        <img src="https://www.bekiacocina.com/images/cocina/0000/96-h.jpg">
+        <p>Arroz con leche</p>
+      </div>
+      <div class="card">
+        <img src="https://buenazo.cronosmedia.glr.pe/original/2023/03/01/63ffd9dbdbd65011a7281b73.jpg">
+        <p>Leche Asada</p>
+      </div>
+      <div class="card">
+        <img src="https://peru.info/archivos/publicacion/145-imagen-1951391982020.jpg">
+        <p>Papa Rellena</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion">
+  <h2>Ubicación</h2>
+  <p>Presiona el mapa para la ubicación</p>
+  <p>Nos encontramos en la Plazuela Victor Raul Haya de la Torre!</p>
+  <a href="https://maps.app.goo.gl/yrLfYVpbVTdoh1qd8" target="_blank">
+    <iframe src="https://maps.google.com/maps?q=-11.1059078,-77.5998269&z=18&output=embed"></iframe>
+  </a>
+</section>
+
+<section id="delivery">
+  <h2>Delivery</h2>
+  <p>Llame o envíanos un mensaje mediante nuestros números para pedir su delivery!</p>
+
+  <div class="phone">📞 952341731</div>
+  <a class="btn" href="https://wa.me/51952341731" target="_blank">WhatsApp 952341731</a>
+
+  <div class="phone">📱 Solo WhatsApp: 944083801</div>
+  <a class="btn" href="https://wa.me/51944083801" target="_blank">WhatsApp 944083801</a>
+</section>
+
+</body>
+</html>
