@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Picarones G&A</title>
+  <!-- Google Fonts (backup method included) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap');
+  </style>
   <style>
     body {
       margin: 0;
@@ -127,13 +131,21 @@
     }
 
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       margin-top: 10px;
       padding: 10px 15px;
       background: #25D366;
       color: white;
       border-radius: 5px;
       text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
     }
 
     .phone {
@@ -213,14 +225,14 @@
 
 <section id="delivery">
   <h2>Delivery</h2>
-  <p>Llame o envíanos un mensaje mediante nuestros números para pedir su delivery!</p>
+  <p>Contactanos!</p>
 
   <div class="phone">📞 952341731</div>
-  <a class="btn" href="https://wa.me/51952341731" target="_blank">WhatsApp 952341731</a>
+  <a class="btn" href="https://wa.me/51952341731" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"> WhatsApp</a>
 
-  <div class="phone">📱 Solo WhatsApp: 944083801</div>
-  <a class="btn" href="https://wa.me/51944083801" target="_blank">WhatsApp 944083801</a>
+  
 </section>
 
 </body>
 </html>
+
