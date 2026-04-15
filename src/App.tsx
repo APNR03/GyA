@@ -28,7 +28,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="min-h-[100dvh] w-full bg-background text-foreground font-sans dark overflow-x-hidden">
+    <div style={{ background: "black", color: "white", minHeight: "100vh" }}>
 
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
