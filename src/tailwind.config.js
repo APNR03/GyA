@@ -12,7 +12,11 @@ export default {
         card: "hsl(var(--card))",
         primary: "hsl(var(--primary))",
       },
+      fontFamily: {
+        sans: "var(--app-font-sans)",
+        serif: "var(--app-font-serif)",
+      },
     },
   },
   plugins: [],
-};
+}
